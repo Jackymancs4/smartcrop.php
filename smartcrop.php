@@ -4,15 +4,9 @@ set_time_limit(0);
 
 include("class/smartcrop-class.php");
 
-$cv=new SmartCrop();
+$cv=new SmartCrop("file/aaa.jpg");
 
-$cv->load("file/ddd.jpg");
-$cv->edgeDetect(false);
-$cv->update();
-$cv->skinDetect(false);
-$cv->update();
-$cv->saturationDetect(false);
+//$cv->load("file/aaa.jpg");
 
-$cv->return_image();
 
 ?>
